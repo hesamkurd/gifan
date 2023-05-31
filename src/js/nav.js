@@ -1,4 +1,4 @@
-import { Settings } from './Settings'
+import { Settings } from './settings'
 
 export function nav() {
   const settings = new Settings()
