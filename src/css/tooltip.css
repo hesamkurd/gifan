@@ -1,0 +1,106 @@
+.tooltip {
+  position: absolute;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.tooltip.dark {
+  background-color: black;
+  color: white;
+}
+
+.tooltip.light {
+  background-color: white;
+  color: black;
+  border: 1px solid #edece9;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+}
+
+.tooltip.t-top::after,
+.tooltip.t-top::before {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.t-bottom::after,
+.tooltip.t-bottom::before {
+  bottom: 100%;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.t-left::after,
+.tooltip.t-left::before {
+  left: 100%;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.t-right::after,
+.tooltip.t-right::before {
+  right: 100%;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.t-top.dark::after {
+  border-top-color: black;
+}
+
+.tooltip.t-left.dark::after {
+  border-left-color: black;
+}
+.tooltip.t-bottom.dark::after {
+  border-bottom-color: black;
+}
+.tooltip.t-right.dark::after {
+  border-right-color: black;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+}
+
+.tooltip.t-top.light::after {
+  border-top-color: white;
+}
+
+.tooltip.t-left.light::after {
+  border-left-color: white;
+}
+
+.tooltip.t-bottom.light::after {
+  border-bottom-color: white;
+}
+
+.tooltip.t-right.light::after {
+  border-right-color: white;
+}
+
+.tooltip.t-top.light::before {
+  border-top-color: #edece9;
+}
+
+.tooltip.t-left.light::before {
+  border-left-color: #edece9;
+}
+
+.tooltip.t-bottom.light::before {
+  border-bottom-color: #edece9;
+}
+
+.tooltip.t-right.light::before {
+  border-right-color: #edece9;
+}

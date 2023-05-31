@@ -1,0 +1,20 @@
+.navbar-closed {
+  width: 64px !important;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-closed .logo,
+.navbar-closed .nav-btn-close,
+.navbar-closed .main-nav-item span,
+.navbar-closed .main-nav-item a:hover span + svg,
+.navbar-closed .nav-item span:not(.notification-circle) {
+  display: none;
+}
+
+.navbar-closed .nav-btn-open {
+  display: block;
+}
